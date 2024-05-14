@@ -1,0 +1,94 @@
+### Get All Cars
+GET http://localhost:7000/api/carshop/cars
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNjg0NDcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.ckistjdve-I9OGhTcxvKszs6SBQTd80xE_Gr5C7jOJU
+
+
+### Get Car by ID
+GET http://localhost:7000/api/carshop/cars/11
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNTc2OTcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.e-dIY4F6rp2M1UKQQmDcB7fJb_1xWpQtWmclp9wxbqg
+
+
+### Create Car
+POST http://localhost:7000/api/carshop/cars
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNTc2OTcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.e-dIY4F6rp2M1UKQQmDcB7fJb_1xWpQtWmclp9wxbqg
+
+{
+  "brand": "Toyota",
+  "model": "Corolla",
+  "make": "Sedan",
+  "year": 2022,
+  "firstRegistrationDate": "2022-01-15",
+  "price": 22000.00,
+  "id": 6
+}
+
+
+### Update Car
+PUT http://localhost:7000/api/carshop/cars/16
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNjg0NDcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.ckistjdve-I9OGhTcxvKszs6SBQTd80xE_Gr5C7jOJU
+
+{
+  "brand": "Toyota",
+  "model": "Corolla",
+  "make": "Sedan",
+  "year": 2023,
+  "firstRegistrationDate": "2023-01-15",
+  "price": 23000.00
+}
+
+
+
+### Delete Car
+DELETE http://localhost:7000/api/carshop/cars/16
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNjg0NDcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.ckistjdve-I9OGhTcxvKszs6SBQTd80xE_Gr5C7jOJU
+
+
+###
+POST http://165.227.131.232:7000/api/auth/register
+Content-Type: application/json
+
+{
+"username": "usertest",
+"password": "user123"
+}
+
+
+### Login User
+
+POST http://165.227.131.232:7000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "usertest",
+  "password": "user123"
+}
+
+### Login ADMIN
+
+POST http://localhost:7000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin1",
+  "password": "admin123"
+}
+
+###
+POST http://localhost:7000/api/auth/reset-password
+Content-Type: application/json
+Authorization: Bearer YOUR_TOKEN_HERE
+
+{
+  "newPassword": "newSecurePassword123"
+}
+
+###
+POST http://localhost:7000/api/auth/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUaG9tYXMgSGFydG1hbm4iLCJzdWIiOiJhZG1pbjEiLCJleHAiOjE3MTMyNjg0NDcsInJvbGVzIjoiYWRtaW4iLCJ1c2VybmFtZSI6ImFkbWluMSJ9.ckistjdve-I9OGhTcxvKszs6SBQTd80xE_Gr5C7jOJU
+###
